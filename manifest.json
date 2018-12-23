@@ -1,0 +1,19 @@
+{
+  "manifest_version":2,
+  "name": "you complete me",
+  "version":"0.1",
+  "content_scripts":[
+    {
+      "matches":[
+        "https://mail.google.com/mail/u/0/"
+      ],
+      "js":["content.js", "base64.js", "jquery.js", "tracery.js"]
+    }
+  ],
+  "background":{
+    "scripts": ["background.js"]
+  },
+  "browser_action":{
+    "default_icon":"youcompleteme10.png"
+  }
+}
